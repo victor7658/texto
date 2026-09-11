@@ -1,0 +1,234 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Racismo Algorítmico</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #050505, #151515, #242424);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            padding: 35px 20px;
+            background: #111111;
+            border-radius: 18px;
+            border: 1px solid #444;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: #ff3b3b;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            color: #cccccc;
+            font-size: 17px;
+        }
+
+        .texto {
+            background: #111111;
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            border-left: 5px solid #ff3b3b;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .texto h2 {
+            color: #ff3b3b;
+            margin-bottom: 18px;
+        }
+
+        .texto p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #eeeeee;
+            text-align: justify;
+        }
+
+        .questoes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: #111111;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #333333;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #ff3b3b;
+            box-shadow: 0 8px 25px rgba(255, 59, 59, 0.12);
+        }
+
+        .card h3 {
+            color: #ff5252;
+            margin-bottom: 14px;
+            font-size: 20px;
+        }
+
+        .pergunta {
+            color: #ffffff;
+            font-weight: bold;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .resposta {
+            background: #1c1c1c;
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 4px solid #ff3b3b;
+            color: #dddddd;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding: 20px;
+            color: #888888;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            .texto,
+            .card {
+                padding: 20px;
+            }
+
+            .texto p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Racismo Algorítmico</h1>
+            <p>Tecnologia, preconceito e desigualdade social</p>
+        </header>
+
+        <section class="texto">
+
+            <h2>O problema</h2>
+
+            <p>
+                Especialistas criticam como estes programas são desenvolvidos.
+                Nos EUA, por exemplo, uma pesquisa revelou que grandes algoritmos
+                de reconhecimento facial erravam 34% em comparação com homens brancos.
+            </p>
+
+            <br>
+
+            <p>
+                O termo racismo algorítmico descreve como as tecnologias, em um
+                contexto denominado por privilégios brancos, reforçam a
+                hierarquização racial de conhecimentos, recursos, espaços e
+                violências, frequentemente em prejuízo de grupos não brancos.
+            </p>
+
+        </section>
+
+        <section class="questoes">
+
+            <div class="card">
+                <h3>Questão 01</h3>
+
+                <p class="pergunta">
+                    Por que o racismo algorítmico reforça a hierarquização social?
+                </p>
+
+                <div class="resposta">
+                    <strong>Resposta:</strong><br>
+                    Reforça a hierarquização racial de conhecimentos, recursos,
+                    espaços e violências, frequentemente em prejuízo de grupos
+                    não brancos.
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3>Questão 02</h3>
+
+                <p class="pergunta">
+                    Como esse tipo de problema representa um viés algorítmico
+                    de gênero e etnia?
+                </p>
+
+                <div class="resposta">
+                    <strong>Resposta:</strong><br>
+                    Ele representa um viés muito complexo, pois os algoritmos
+                    podem apresentar resultados diferentes dependendo do gênero
+                    e da etnia das pessoas analisadas.
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h3>Questão 03</h3>
+
+                <p class="pergunta">
+                    Qual é a relação do racismo algorítmico com o racismo
+                    estrutural existente na sociedade?
+                </p>
+
+                <div class="resposta">
+                    <strong>Resposta:</strong><br>
+                    O racismo algorítmico pode reproduzir desigualdades que já
+                    existem na sociedade. Por exemplo, em uma faculdade, se
+                    determinados grupos tiverem mais oportunidades enquanto
+                    pessoas de outras etnias forem prejudicadas, os algoritmos
+                    treinados com dados históricos podem acabar reproduzindo
+                    essas mesmas desigualdades.
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            Trabalho escolar — Tecnologia e Sociedade
+        </footer>
+
+    </div>
+
+</body>
+</html>
+```
